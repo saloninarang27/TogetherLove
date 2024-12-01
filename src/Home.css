@@ -1,0 +1,82 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+#two {
+  /* background-color: rgb(248, 130, 193); */
+  background: linear-gradient(to bottom, #e245a3, #f36060, #2c5364);
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border-width: 30px; 
+  border-style: solid;
+  border-image: url("../src/Pics/hearts.jpg") 30 round;  
+  box-sizing: border-box; 
+}
+
+#slider-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#ii {
+  height: 400px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.929);
+}
+#iii{
+  height: 250px;
+  width: 300px;
+}
+@media (max-width: 768px) {
+  #slider-container {
+    max-width: 600px; 
+  }
+  #ii {
+    height: 300px; 
+  }
+  #iii {
+    height: 200px;
+    width: 250px;
+  }
+  h1 {
+    font-size: 1.8rem; 
+  }
+  h2 {
+    font-size: 1.2rem; 
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  #slider-container {
+    max-width: 90%; 
+  }
+
+  #ii {
+    height: 200px; 
+  }
+
+  #iii {
+    height: 150px; 
+    width: 200px;
+  }
+
+  h1 {
+    font-size: 1.5rem; 
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1rem; 
+    text-align: center;
+  }
+
+  #two {
+    padding: 10px; 
+    border-width: 20px; 
+  }
+}
+

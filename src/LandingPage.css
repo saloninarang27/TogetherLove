@@ -1,0 +1,20 @@
+#i {
+  max-height: 550px;
+  height: 100%;
+  width: 100%; 
+  max-width: 1410px;
+  object-fit: cover; 
+  margin: 0 auto; 
+}
+@media (max-width: 768px) {
+  #i {
+    height: 100%; 
+    width: 100%; 
+  }
+}
+@media (max-width: 480px) {
+  #i {
+    height: 100%; 
+    width: 100%; 
+  }
+}

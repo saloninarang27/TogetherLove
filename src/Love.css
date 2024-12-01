@@ -1,0 +1,189 @@
+/* Main Container */
+#abc {
+  background: linear-gradient(to bottom, #3f181e, #ff7eb3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative; /* For positioned elements like hearts */
+}
+
+/* Image Styling */
+#iv {
+  width: 80%;
+  max-width: 350px; /* Restrict maximum size for larger screens */
+  height: 80%;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, #fffdfd, #ffdd00, #f40317);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Thank You Message */
+h4 {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 10px 0 20px;
+  line-height: 1.6;
+}
+
+/* Footer Message */
+#abc div:last-child {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Falling Hearts */
+.hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  bottom: -50px;
+  width: 20px;
+  height: 20px;
+  background: #e63946;
+  clip-path: polygon(50% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  animation: floatUp 5s ease-in infinite;
+}
+
+.heart:nth-child(odd) {
+  background: #ff6f61;
+}
+
+.heart:nth-child(even) {
+  background: #f72585;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateY(-150vh) rotate(360deg);
+  }
+}
+
+.heart:nth-child(1) {
+  left: 5%;
+  animation-delay: 0s;
+}
+.heart:nth-child(2) {
+  left: 20%;
+  animation-delay: 1s;
+}
+.heart:nth-child(3) {
+  left: 35%;
+  animation-delay: 2s;
+}
+.heart:nth-child(4) {
+  left: 50%;
+  animation-delay: 3s;
+}
+.heart:nth-child(5) {
+  left: 65%;
+  animation-delay: 4s;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  /* Adjust the image size */
+  #iv {
+    width: 90%;
+    height: auto;
+  }
+
+  /* Adjust header size */
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* Adjust text size */
+  h4, #abc div:last-child {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust header size further for small phones */
+  h1 {
+    position: relative;
+
+    font-size: 2.2rem;
+    background: linear-gradient(to right, #fffdfd, #ffdd00, #fe071c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -80px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  h4, #abc div:last-child {
+    font-size: 0.8rem;
+  }
+}
+
+/* Responsive Image */
+#iv {
+  width: 80%;
+  max-width: 350px;
+  
+  margin: 10px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Mobile-Specific Styling */
+@media (max-width: 768px) {
+  #iv {
+    height: 250px; /* Increase height for mobile screens */
+    width: 90%; /* Slightly increase width for better view */
+  }
+}
+
+@media (max-width: 480px) {
+  #iv {
+    height: 400px; /* Further increase height for smaller screens */
+    width: 100%; /* Full width for a clean layout */
+  }
+  h4{
+    font-size: 1.1rem;
+    background: linear-gradient(to right, #d6c5dc, #e7e6e1, #e5cacd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* margin-top: -80px; */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  #lo{
+    /* background: linear-gradient(to right, #d7d3d3, #ebebe5, #f1eaeb,#e63946);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}

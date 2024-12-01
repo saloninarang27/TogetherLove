@@ -1,0 +1,68 @@
+#three{
+  /* background-color: rgb(142, 249, 240); */
+  /* background: linear-gradient(to bottom, #ff9a9e, #fad0c4); */
+  /* background: linear-gradient(to bottom, #ff758c, #ff7eb3); */
+  /* background: linear-gradient(to bottom, #f7797d, #fbd786, #c6ffdd); */
+  background: linear-gradient(to bottom, #ff9a9e, #fbc2eb, #fad0c4, #a18cd1, #ffe6fa);
+
+
+
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border-width: 30px; 
+  border-style: solid;
+  border-image: url("../src/Pics/heart.jpg") 30 round;  
+  box-sizing: border-box; 
+}
+@media (max-width: 600px) {
+  #three {
+    padding: 10px; 
+    border-width: 15px; 
+  }
+  #three h2 {
+    font-size: 1.2rem; 
+  }
+  #three p {
+    font-size: 0.9rem; 
+  }
+  #three img {
+    width: 100%; 
+    height: auto;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #three {
+    padding: 15px;
+    border-width: 20px; 
+  }
+  #three h2 {
+    font-size: 1.5rem; 
+  }
+  #three p {
+    font-size: 1rem; 
+  }
+  #three img {
+    width: 80%; 
+    height: auto;
+  }
+}
+@media (min-width: 1025px) {
+  #three {
+    padding: 20px;
+    border-width: 30px;
+  }
+  #three h2 {
+    font-size: 2rem; 
+  }
+
+  #three p {
+    font-size: 1.2rem; 
+  }
+
+  #three img {
+    width: 50%; 
+    height: auto;
+  }
+}
