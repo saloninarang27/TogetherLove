@@ -27,6 +27,7 @@ function Home(){
       <audio src={music} autoPlay loop>
         Your browser does not support the audio element.
       </audio>
+      <br></br><br></br><br></br>
       <center><h1>Happy Anniversary Mumma and Papa!</h1></center>
       <center><h2>Celebrating 29 Years of Love and Togetherness ❤️</h2></center>
       <div id="slider-container">
@@ -47,7 +48,7 @@ function Home(){
       <p>With all my love, Your Daughter"</p></div>
       </div>
       <center><div><img id="iii" src={rose} alt="Gift" onClick={handleImageClick} style={{ cursor: "pointer" }} /></div></center>
-      <center><p>"Click on this rose to sprinkle love and joy on your beautiful journey together!" 🌹</p></center>
+      <center><p style={{color:"white"}}>"Click on this rose to sprinkle love and joy on your beautiful journey together!" 🌹</p></center>
       <br></br>
       <center><div>With love, Saloni ❤️ </div></center>
     </div>
